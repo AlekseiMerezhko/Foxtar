@@ -1,0 +1,80 @@
+nav{
+    background-color: #263238;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center;
+    .flex_container{
+        >ul{
+            font-family: "Roboto";
+            font-weight: medium;
+            >a{
+                transition: all .2s ease;
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    color: $main-color;
+                }
+                >li{
+                    display: inline;
+                    font-size: 14px;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+.header_top{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+    >.flex_container{
+        >.header-top_menu{
+            display: flex;
+            justify-content: space-between;
+            >.logo{
+                display: flex;
+            }
+            >.header_panel{
+                display: flex;
+                >p{
+                    font-family: "Roboto";
+                    font-weight: medium;
+                    font-size: 15px;
+                    color: #546e7a;
+                    >span{
+                        color: $second-color;
+                    }
+                    >a{
+                        transition: color .2s ease;
+                        text-decoration: none;
+                        color: #546e7a;
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+                >button{
+                    font-family: "Roboto";
+                    font-weight: medium;
+                    color: #fff;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 12px; 
+                }
+                >.button_login{
+                    background-color: $main-color;        
+                    padding: 11px 22px 9px 21px; 
+                    margin-left: 15px;                  
+                }
+                >.button_register{               
+                    background-color: $second-color;
+                    padding: 11px 13px 9px 15px; 
+                    margin-left: 7px;                   
+                    
+                }
+            }
+        }
+    }
+}

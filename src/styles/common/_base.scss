@@ -1,3 +1,4 @@
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -18,5 +19,38 @@
 
 .main {
 	flex-grow: 1;
-	width: 100%;
+  width: 100%;
 }
+
+h1{
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  >li{
+    padding-left: 20px;
+    position: relative;
+
+    &:before{
+      content: '\f105';
+      font-family: "FontAwesome";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $main-color;
+    }
+  }
+    
+}
+
+// input{
+//   box-shadow: 1px 0 10px rgba(139, 195, 74, 0.75)
+// }
